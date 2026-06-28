@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Marai</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #fafafa;
+      color: #1a1a1a;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: #E05454;
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fff3f3;
+      color: #E05454;
+      border: 1px solid #f5c0c0;
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    p { margin-bottom: 14px; color: #333; }
+
+    ul {
+      margin: 10px 0 14px 20px;
+      color: #333;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    .highlight-box {
+      background: #fff8f8;
+      border-left: 4px solid #E05454;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p { margin: 0; color: #1a1a1a; font-weight: 500; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 20px;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background: #f5f5f5;
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 600;
+      border: 1px solid #e0e0e0;
+    }
+
+    td {
+      padding: 10px 14px;
+      border: 1px solid #e0e0e0;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td { background: #fafafa; }
+
+    a { color: #E05454; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Marai — Privacy Policy</h1>
+  <p>மறை &nbsp;·&nbsp; My Secret &nbsp;·&nbsp; Local-First Zero-Knowledge Secrets Manager</p>
+</header>
+
+<div class="container">
+
+  <div class="badge">Last updated: June 28, 2026</div>
+
+  <div class="highlight-box">
+    <p>Marai is built on a single principle: your secrets are yours alone. We cannot see, access, or recover any data you store in the app — ever.</p>
+  </div>
+
+  <!-- 1 -->
+  <h2>1. Introduction</h2>
+  <p>
+    This Privacy Policy describes how Marai ("the App", "we", "our") handles information when you use our mobile application. Marai is a local-first, zero-knowledge password and secrets manager. Your data never leaves your device unless you explicitly choose to back it up to your own Google Drive account.
+  </p>
+
+  <!-- 2 -->
+  <h2>2. Information We Collect</h2>
+  <p><strong>We collect no personal information.</strong> The App does not transmit any data to our servers because we do not operate any servers that receive your data.</p>
+  <p>All information you enter into Marai — passwords, usernames, tokens, notes, and any other secrets — is:</p>
+  <ul>
+    <li>Stored exclusively on your device</li>
+    <li>Encrypted before being written to storage</li>
+    <li>Never sent to us or any third party by the App itself</li>
+  </ul>
+
+  <!-- 3 -->
+  <h2>3. How Your Data Is Stored</h2>
+  <p>All vault data is stored in an encrypted SQLite database on your device. Sensitive fields are individually encrypted using <strong>AES-256-GCM</strong> before being written to the database.</p>
+
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Storage Location</th><th>Encrypted?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Passwords, tokens, secrets</td><td>On-device SQLite database</td><td>Yes — AES-256-GCM</td></tr>
+      <tr><td>Usernames, titles, notes</td><td>On-device SQLite database</td><td>Yes — AES-256-GCM</td></tr>
+      <tr><td>Derived encryption key</td><td>Android Keystore / iOS Secure Enclave</td><td>Yes — OS-level protection</td></tr>
+      <tr><td>Your master password (Super Key)</td><td>Not stored anywhere</td><td>N/A — never persisted</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 4 -->
+  <h2>4. Encryption</h2>
+  <p>Marai uses industry-standard cryptography to protect your data:</p>
+  <ul>
+    <li><strong>Key Derivation:</strong> Your Super Key is run through PBKDF2-SHA256 with 100,000 iterations and a random 32-byte salt to produce a 256-bit encryption key.</li>
+    <li><strong>Encryption:</strong> AES-256-GCM with a unique random 12-byte nonce per field, providing both confidentiality and integrity (tamper detection).</li>
+    <li><strong>Verification:</strong> A SHA-256 hash of the derived key is stored to verify your Super Key on unlock — the key itself is never stored in plaintext.</li>
+    <li><strong>Your Super Key is never stored.</strong> If you lose it, your data cannot be recovered — by you or by us.</li>
+  </ul>
+
+  <!-- 5 -->
+  <h2>5. Google Drive Backup (Optional)</h2>
+  <p>Marai offers an optional backup feature that saves an encrypted copy of your vault to your personal Google Drive account. This feature:</p>
+  <ul>
+    <li>Is entirely optional and must be explicitly enabled by you</li>
+    <li>Saves data to <em>your</em> Google Drive, not to our servers</li>
+    <li>Uploads your vault in its fully encrypted <code>.marai</code> format — the backup file is unreadable without your Super Key</li>
+    <li>Requires you to sign in with your Google account — we receive only the OAuth token needed to write to your Drive</li>
+  </ul>
+  <p>When you use Google Drive backup, Google's own <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> applies to the storage of that file.</p>
+
+  <!-- 6 -->
+  <h2>6. Biometric Authentication (Optional)</h2>
+  <p>If you enable biometric unlock (fingerprint or Face ID), the App uses your device's built-in biometric hardware. Marai never accesses raw biometric data — authentication is handled entirely by the operating system (Android Biometric API / iOS Local Authentication). The App only receives a pass/fail result.</p>
+
+  <!-- 7 -->
+  <h2>7. Permissions</h2>
+  <table>
+    <thead>
+      <tr><th>Permission</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>INTERNET</td><td>Required for optional Google Drive backup and Google Sign-In</td></tr>
+      <tr><td>USE_BIOMETRIC / USE_FINGERPRINT</td><td>Optional biometric unlock</td></tr>
+      <tr><td>READ_MEDIA_IMAGES</td><td>Optional image attachment to entries</td></tr>
+      <tr><td>Face ID (iOS)</td><td>Optional biometric unlock on iPhone</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 8 -->
+  <h2>8. Third-Party Services</h2>
+  <p>Marai does not integrate any analytics, advertising, crash reporting, or tracking SDKs. The only optional third-party service is Google Drive for backup, which is governed by Google's Privacy Policy.</p>
+
+  <!-- 9 -->
+  <h2>9. Data Retention & Deletion</h2>
+  <p>All your data resides on your device. You can delete it at any time by:</p>
+  <ul>
+    <li>Deleting individual entries or folders within the App</li>
+    <li>Uninstalling the App (removes all local data)</li>
+    <li>Manually deleting your <code>.marai</code> backup file from Google Drive</li>
+  </ul>
+  <p>We have no copies of your data and cannot delete it on your behalf.</p>
+
+  <!-- 10 -->
+  <h2>10. Children's Privacy</h2>
+  <p>Marai is not directed at children under the age of 13. We do not knowingly collect personal information from children. Since we collect no data from any user, this applies equally to all age groups.</p>
+
+  <!-- 11 -->
+  <h2>11. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Last updated" date at the top of this page. We encourage you to review this policy periodically.</p>
+
+  <!-- 12 -->
+  <h2>12. Contact</h2>
+  <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+  <p><a href="mailto:developer.greywolf@gmail.com">developer.greywolf@gmail.com</a></p>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Marai. All rights reserved.</p>
+  <p style="margin-top: 4px;">Your secrets stay yours. Always.</p>
+</footer>
+
+</body>
+</html>
