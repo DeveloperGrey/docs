@@ -22,6 +22,13 @@
       text-align: center;
     }
 
+    header .logo {
+      width: 88px;
+      height: 88px;
+      margin-bottom: 16px;
+      border-radius: 20px;
+    }
+
     header h1 {
       font-size: 2rem;
       font-weight: 700;
@@ -121,13 +128,14 @@
 <body>
 
 <header>
+  <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEYCAYAAACtPhgjAAAACXBIWXMAAAsSAAALEgHS3X78AAAa70lEQVR4nO2d33HbSLPFj137Ln8RgI5AuhEYjsDaqm+eDUdgOQLTEawcwdLPeLhSBIYiWCqCBSK4ZgS6D9MQYYrE35npAXh+VSzJK2J6ViIOenq6e149PT0hRipjrgC8AVB/BYC05+WFfC3ltU3y/Je72RFy3rzSFo7KmFocUvm6AnDpwdQOwBZWVApQTAgZjYpwVMZcwwpFCj8i0ZcHAHcA7pI8LxXnQcisCCYclTEpgAzANYCLIEaH8QhgA4oIIZ14FQ5ZhlwDWANIvBlyzz2A2yTPC+2JEBIj3oSjMmYN4AZxehd9eQCwpoAQ8jvOhUPiF7eYl4fRBQWEkAbOhKMyZgUbI3jnZMA4uQdwwxgIOXdeuxhEvIwtli0aAPABwLYy5kZ7IoRoMtnjqIzZAPjoZDbz4gFARu+DnCOjhUN2TAro5mFos4MVjzvtiRASklFLFUkHL3DeogHYHaP/rYy51Z4IISEZ7HE0RGPO26w+uIf1PpjGThbPIOGgaHTyCCCleJCl01s4JKaxxbLyM3xA8SCLp1eMoxEIpWh0cwmgkN8ZIYukb3D0FgyEDoHiQRZNp3BIstM55mlMheJBFkurcEgwdB1mKovkEjYNn5BF0RocrYzZItwSpYK0+QNwLLC4arzmFmv5luT5WnsShLjipHDIEuUvj7YfYbtvFUOrThvtButOYnOIv/zJDFOyFI4Kh9yYJdzna1SwrvvGZY2HVOZew/b/iNUb2QG4Ym0LWQKnhGMDtwHRCrafxcbhmMcN2UrdG8RZqfuQ5HmqPQlCpvJCOOTp/a+j8XewLfjWjsbrTWVMhjhbFn5J8py1LWTWHNtVWTsa+xHWNXc13iDEu7kC8F3DfgtrEWdCZstvHofENv7Pwbg/kjzPHIzjBFm+bBBPjQ2XLGTWHHocmYMxP8UkGgAguxkprBcUA+9EzAiZJYfCMbUl3qcQAdAxJHm+RVziwTgHmS3PwiFZolMCid9jFY0aqVhNEYd4JBLAJWR2ND2ObMI4D0mez6KBr4jHNeyOjza3rGUhc6QpHGPX3LsJ16ogSVip8jQAG6zNtCdByFBeA8+5G2OXKTdzbFojMY8v2vPA9LgSIcGpPY505PWPscc12pBErAftaTDWQeZGLRxXI69fO5qHJhn04x30OsismCIc1RKqPSXesVaexqXsahEyC/6Qr2M+tE7zEBql8vVXQHpz+D7sOcnzW2kjoFnXcgMGSslMqIVjTCr2ZG9DgrI3sLsyJ2/ayhjAnlty5zGmsgbwt6ex+3BdGfNmjoFmcn68Kv/73ysA/wy87jHJ80mu9YRGQRXsTo7zZVJlTAldryPazFtCmryGXRoMpZhiVPp9jO0ulsAeu7iZMocTrD2MOYRZ5cOQ82XU2bGwsYdRyNajiyZBHytjti4zL+VpX7kabwQfmElK5sBY4SjHXCQ3hcug6qXj8QD9ruSpsn1COhklHBN2OTK474nxUeIlrtg4HGsMXK6Q6BnrcYwl8zTu2pWLL3kdmtmkFA4SPcGEQ25sX8cYXMDtkmXjcKyhXDAZjMTOa0wIdA7E981w7TCwWDgaZyypsn1CWnm9oISjCzhy82W5otnsJ1W0TUgn9VJl0E1SGZO6n4oTXMYHNOtwuFQhUVMLRznwupXbaTgjdThW4XCsoSTM5yAxUwvH0DjHmCdiiCXRhaszS3wX1vWAXgeJllo4ioHXpUMNScetEH0vVg7H0tyWTRVtE9LKa+D56Trkpr4c+WQPETdw6eIXDscaykrRNiGtNPM4ht7UYwKRmxHXDMWlix9qq/oYK0XbhLTSFI5i4LWD07zFs9Hu8TkETeF4p2ibkFaehUMqQ4csV8Y22c0G2hlK4WogyecghBxwmHK+GXj9eqjBxpkm2g2C+6LmIUWcL0POnEPhGFrvkVTGrIcalR2WK/i5KV0vL0rH4xEye34TDvEGfgwc4+uYoqwkz8skz1MA78Vms4HODrbH6Bf5ed/M1spDCn3peLwhMJeDRMkfR/7bGsM7dN1VxlyNuWklYFqc+rmI0qrncCfHmYBmgJTZoyRKXpTVi9fxfeA4CYDCdZq0BF8L9G/+4yNPRLMIkMJBouRUP441hgcvL2HFYzVlQjXS1etv9BeNnacDojQ9Di5VSJQcFQ5ZcmQjxrsEsK2MGV2lWhmzqowpMLwLuuveowCefxeEkAYnO4DJ0/t+xJgXsMcX3A3xPipj3sgOzRbDk5928CQcynCpQqLkWHC0SQYbYxjT8u8DbLv/B9j8kOIwoUqEJZXXlCMTbjx7Bg/QyeT01WqRkEm8enp6an2D3NxbuOtOvoMNOLo6Me0+yXOvDX5l6aSSAp7k+SsNu4S00dms2EOm5wXcicYjeFAzIcHp1eVcMj1X0O3DecgjgJTBS0LC0/t4BLlBUwzPLPVBaNEoAtl5AY9KIDEy6FyVJM9/JXmeAfgTemesfsd5eRrcWSHRMfYIyDvY5KRvCFflWgF4n+S57x0UQkgHXduxJ5Gbd10Zcwvb1CeDu6BnkwrAWvqFEEIiYLRw1NQCAisi17AtBa8xbft2B1t3cucpjZwQMoHJwtFEbvI74Dmol8IuaVby9ZSYPMDmdmxhE8UKl/MihLjFqXA0kS1czQIxQogngp1WP3MogIQ0oHD0g7s4hDSgcBBCBkPhIIQMhsJBCBkMhYMQMhgKByFkMBSOfqy0J0BITFA4+rHSngAhMUHhIIQMhsJBCBkMhYMQMhgKR/ywToZEB4UjctjtjMQIhYMQMhgKRz9W2hMgJCYoHP1YaU+AkJigcMRNTAdgEfIMhSNuGBglUULhIIQMhsLRD5WT6gmJFQpH3DD5i0QJhSNuGOMgUULh6KAyhoc+E3IAhaObK0XbpaJtQk5C4YibUnsChByDwkEIGQyFo5tU0XapaJuQk1A4IibJ81J7DoQcg8JBCBkMhaObVMkuC9xItFA44oXJXyRaKBzdaCWAUThItFA4urlUsss6FRItFA5CyGAoHC1Uxmimm9PjINFC4WhHs8CNMQ4SLRSOdjSFo1S0TUgrFI521JYqzBolMUPhIIQMhsLRjpbH8aBkl5BeUDjaYfcvQo5A4WhnpWS3ULJLSC8oHO0k2hMgJEYoHCdQblLM5C8SNRSO02hmjTL5i0QNheM0TP4i5AQUjtMw+YuQE1A44qPSngAhXVA4TpMq2S2V7BLSGwpHfJTaEyCkCwrHad4p2S2V7BLSGwpHfHArlkQPheMI7PxFSDsUjuOw8xchLVA4jqOZw0GPg0QPheM4Wh7HTskuIYP4Q3sCkaLlcdDbiIDKmBVsS4X6hYPvm/zC/u9Wf/9r6Z4jheM4bOBzJkggvPkasw3/4ci4gD3/dyuvYkliQuE4zkrJbqFk92yQdgnXsJnB1wAuPJq7lNdHsb2D/RvfwQpJ6dG2Vygcx2EDnwXREIsb6B3pCViR+iAvVMY8AtgA2CR5PqvdtFdPT0/ac4gKWd/+q2T+fZLnhZLtxVEZkwLIIE/8yPkBKyCF9kT6QI/jJSvtCZBpVMZkANaYl+f4EcDHypgKwDrJ843yfFqhx3GAfOj+1rCd5PkrDbtLYaaCcYqoBYR5HC9ZaU+ADKMyJquMKWEFfwmiAdj/j78rY0oRxKjgUuUlWluxj0p2Z4tspd5Cr5I5BLWAZABuYtnSpXC8RCv5a1ZRdU1kl2QN4LPyVELyDsA/lTHfYZcwqp8XLlVeouVxRPEkiR3ZKdnivESjyWcAW/k9qEHheInWPj89jg4qY9YAfmI5cYyxJAB+Vsbcap3/Q+GIh1J7ArFSGfOmMqYA8FV7LpHxGUCh0T+GwtFA2f0rFW1Hi9wUJZYdAJ3CJax4ZCGNUjjigUuVA+RmKOC3nmQJXMDuvNyGMkjh+J1Uy3As22yx0EjEo2j053NlzCZE3IPCQaJDM3t3AXyEXbp4FQ8Kx+9o5XA8KNmNDoqGE+q4hzfxYALY77CBjyLKovEAmx9SomcXr0YwPYUtVbiCbtl+k1o8Uh/JYhSO39ESjlLJbjQoiMYj9g11ijEDNK57vl6e8ils/w/fjYK68CYerI5tUBmj9cv4luT5Wsm2OrLl+k8AU3XjnLtQ3bcqY2oB0ewJ8gjAqXhQOBpQOMIjjZO28PtkVm+SI57Ijbw0vBCn4sGliqCc/FUo2lZDbqY7+LuRfsAWhJWexu+N3LBrAGtZlt0irIBcwv6uUxeDcVeFaHILP8HEBwBvkzzPYhCNQ6Q5zwrAt8Cm31XGbFwMROHYo7mjUiraVkHW/q7X/TsAfyZ5nsYoGE2SPP8ly9O3CLsd/7Ey5mbqIBSOPZrHPpZatjWQJcrG8bD3AFZJnt85HtcrSZ6XSZ6nAL4g3El+f01dmlM4iAYbuF3ff0ry/Fq7uc0Ukjy/hY0/hOoEdzclQYzCsUfL4zirloGyRHlx8tlIdgD+J9aGvkORhLMU1nvyzQVssHQUFI49WjGO2T4lhyJPOFcVnPX24qKKAyX2cQ3gewBz76Q50mAoHCQkN3DTvWuRotEkyfMbAJ8CmPo6phEQhWOPVqOYxX74mzQSoKbiPAsyVmQJFkI8NkMvoHDos/gbQHCR8LQDkJ2DaNQEEo/LoUsWCgfxjqSVu8jZWPTy5BQiHr6Txb7K36kXFA48F1lpcQ5Pz8zBGF/OUTRqJFnsh2czm75vpHBYNLNGF30zOIpt3Euew1mT5HkGv9v372S7vBMKB/HN1J4UO7jxWJbCNfxmmPYSaAqHhZ2//DHV2zirYGgXUp6Q+TTR56gFCoeFMQ4PSOxoSvXrw9xqT0IgvxOf8Y7OE+IoHMosPOCXKV+/ZG7gb8lygQ5PkcJBfNIr0HaCH+dWNTwEWb5lHk1QOHrAGIdjZJkyJb187Wgqi0WWLL56eVy0xTooHBbNGMdSySZcS2+jP2uNsSkcxBfphGs3juaweKQBs69AaXKq4Q+FQ5dF9uKQiPzY3ZRHzW7kM8VnctzRWAe7nOuy1K3YdMK1G0dz6I1kS6awS9ZTVdIV9qe8FbAHOUXx90vyfFsZ8wA/Fd4fKmNWh0tHCgfxwZSYUZC8DSnoWqN/Zmsir3cAPssY9wBuI/GQbuGvNcQ1DrwaLlUsK+0JLIx05HWPIYKiUkL+L2zF7pR0+A8AflbGlMrn8tQ7LJWn4V8sVygcFhddqciesR6HV2+jMuZNZcwWwFfHQyewAjKpAbADNp7GTQ4ryCkcxAdjn+LehEM++CX8nib/AcBWsU3DxuPYWfMfFA7ilCkuu6/0e4lnFAhz5GICe0J8cPGQZZ6vnbq0+Q8KB3HNWFfdSwbkyPNpdzKf5msIF1ASD/jzOi6bHcK4q0JcM/Zm8VXst0b/5ck97CHVR+ci27Z9j66sxWMVeNu28Dh2ChEmehwkFpwLhzzxP/d4a33m7HXbcinJ8zvpwvUW/bI1Jx16NAaZv6+q2eeiRQoHcc3YpUrpchJC34zKbEjfDznvNQPwHt036bs+jXEcU3gaN62/oXAQ14xdqpQuJyHeRp+EqB9jmwVJ4tcVugOSnY1xHONr2XdRxzkoHCQKPCR+ZT3ft55iROadoj35qrMxjmMKj2OnAIWDLJc+TYScZKpK8LOriXBI4fDZVe4K4K4KiQOnwbwBTYRWlTFPh5fDPrHXQ0RFCs3WAP468ZaLyphMDlfySpLnvypjfA1/BdDjIHHg+gnZN85yLLcjgd1u/XfosYhy9ktbzseUVopD8dUZjMIRAew85oeVo3G+DhUPtMdMPijXsrjgojLmDYVDlxAp0KEZk+wU88006ExV2WlpC5SmE+fTF69xDgoHcc2YD6zrwrPU8XhDA5tt+SOhvEyf2ar0OMgiKRyPlzq0P3SsGKHHIfgKJJ0jUbTTc8wgj6ijyncRcS0KhzLanaM8MGpt7fj3UDocayynHkZLiGtxqUKcU468zmWAtHA4FuC4x8UCdla4VCFumZCJ6cyF99DQZowXVbb8bPbLFQqHPivtCXhgTMzI9c3k8qyRYsQ1c/cqWqFwWApF2ytF274Y84R2KhyS2u0i6F2NTBOncBCvLPEDVoy4JhmSaNWTDNPrYEIWp7lk5XNwCodFcwtx9uvdIxQjr3Nay9EoeR8rHt/H9upAey8Qn1mdNSufg1M4LCH+kKdYKdr2gpSZjwlOpo6nUudUXGH4suVbkuejvI2uJsWBepB69WQpHBZNj2Oph0FtRlzjpQhMWv2lsK3+7jve/gDgfZLn6wkm24TDVz/QQ3yeH0PhAPyd59GXBSaBAeOb9GYuJ9EkyfMiyfNrAP+BFZFvjdcnAG+TPE8dnAXbtuTy/lnzECs6pGQjnz2P8KzSLayU7HojyfOyMmbM7/QGbrdSXyBLhQIedtPEY/rQ8pbZxzcAlPQ49pSKtpcYIAXGCUAycw8s6/h5COFIfRugcOzRXK6kirZ9codxa/q143mEpCugWgSYQ+p5/C2FY0+haPtyAfULL5AlwRiv490cvQ45P6Ut2F156OZ+DN8e7C8Kh+AgIDaVVNm+L24xzuvYOJ5HCNYdP/d+qptsBfuuwGWM4wDNvhwhG9kGY4LXkYzo96mGzLVra33jfyb+P0dJnlM4DigUbaeKtn0z1uv4qnTi+yBkjl873vYYaNvft3A8AAyOHhL0gOADkjncJGMQr2Nszccm5viPzG3T461et5iB5/wN3ykFJUDh+A15IrR1qPZNpmjbKxOqVS8Rd7zjFt036y7EQUwI8/kpAQrHMTS9jkzRdggyjFuyfKiM2bidynQkrvGxx1u9extCFsBGAVA4jrFRtH1RGbPIICnwXK26Hnn5x5jEQ7Zeu+IagN2CXfudDSCfG+91T/XuI4XjgAiWK3Pt/9ALOSaxq9DsFB8rY9RjHuJp/N3z7aH+niHsPFc8UziOs1G0/S5AkZI2Gcb3BP0IoNAIJFfGvBGvp4+nAQD3E/p59EY+L239P1xR1N9QOI6zUba/VrbvFdllucb4EvNLWPEI5p2JUBXoF9MA7P9b5ms+B6wD2Snqb149PT0FsjkvKmPu0F7l6Ju3gdKT1WjcjFMyHSsAma/MX1kWrQF8Hnjp+xDZyPI7/Me3HQBI8vxV/T09jtOEioSfYq1s3zsST0oxrblNAuBnZUxZGZO5in9UxqwkllFiuGh8CljCEOpz+ltcih5HC5UxBcKsHU+xeK8DcOZ5NLmX8Yoh2ZoyjxR2GTX27/59bMvBoUgh4M8QtmDFcFP/g8LRgmy59Y2e++BeOlYtHrlp7+BnS/ERtj1kid/7rlzB9uZ8AzcZlz+SPM8cjNOJeFZbhGs9+Z9mr1QKRweVMSV0+4IGWSvHgNwMd9D18sbyKVB2KIDnLeG+uztTefEAY4yjG+28io2y/WAkef5Lmgp/057LAHYA/gwsGinCiQZwJJuawtGB7MNrltvPqrzcBZJp+R66iXh9eARwFSJXo2ZAUZ0rdqBwjGatbH8W5eUukeXZFeL0Pnaw565cKQSvNwi7dL47dg4MhaMH8iH+oTyNO+1U69DI0mUN4C30f/81P2C9jHVow5LwFjq36Oh2L4OjPZGbtoT/tmxtBIvax4ikVq9ht0tD/h12sE/6W63t8cBbrzWPSZ4f9XQpHAMQxf9LeRpBo/cxIiJ+DRu49tm45h7WVd94tNGJhzyXvpz8rFE4BhJBUhhwRlu0XYgXkjZeU9b/j9gf1FQEOuO1FUVPt0ryfHXqhxSOgcgHdQvdJcsOQKp9dGWMyI12hX1yF/Cyn+sv7M/R2QIoY/xdyv9LAZ0TBls9WwrHCCJZsuwArGJ4KhL3KIvGLsnz1kA8d1VGMLEZjSsuYEvLz2qn5RwQr7aA3lnGnUmPFI7xZJhW1emCui8FxWMhSCB0Cz3RqPoEgykcI5ElQqo9D+zFY6U9ETIN2XItoBs/W/d5E4VjAhJQ+6I9D1jx2J5bdumSkErsn9AVjce+W88UjolIvCOGrMY65nEWZfhLodHHVLN9Q03vgk7uqjiiMkZzXXrIFxE0EjHiIW4Qx+dmUFYyPQ53pBjfuds1f1XGnF1ty5yQLf0CcYjGDgPbR9DjcEgkyWFNKgDXMSY3nSvyGdlAP/u4yZ9DWwPQ43CIFECl0N+mrUkA/HNu/TxiRbyMLeISjYcx/UTocXhAsSipjUcAN6xxCY9ss/Y5nDo0o7OPKRyeiFQ8ALsDdMNUdf/IsuQWuufztDF4iVJD4fBIxOKxA7DmzosfGn1D+p76psGk3i4UDs9ELB6ADZ6utftNLIWZCAZgl63pFK+TwhGAyMUDoIBMQv6+N4hfMABHLRkoHIGQp9Ed4guQNamwb5HHGEgHkiaeIa5dki5GxzWaUDgCotxjYQh1S/xb5oD8jngXmbxi9SBP8c1Vk2UKhwJSmzAHtxaw6+ENbO/NUncqOoi3eA0rFrGL/imcNrqmcCgR+Ag/V5yNiDQOoM4wX7GoOdmtfCwUDkWkknWD+bm8wL6x790SksocNz2Oick7KMegcCgzk6BpHx6w7xC+jT24Kh5F7VWkWI5QNPEiGgCFIwokaHqL+cQ9+lDB1mXUL5VO4iLMK1hxqL+f0y7IWHawJ86VPgancETEzJcufdnBCknziIJSXjW/2kRGvIVmy4D6SARgLw4rLNOL6IP34zMoHJERadk1mQ9BztyhcESKlGCvsWzvg7jFW0zjEApHxND7IAMIJhoAhWMW0PsgHdwDyELuZFE4ZoLsvGwQb28HooPTjNC+UDhmhnST2uB8dwzIntaDoX1C4ZgpXL6cNTvYJtSF1gQoHDNGli83mF/NCxlP0CDoKSgcC2BGnafINJyVxU+FwrEgKCCLpYLdNSm0J1JD4VggFJBF8R22rWNURYMUjgVDAZk10XkZTSgcZ0AjiHoD7sLMgW+IvO8rhePMkAa7N5h//48l8gDrZZTaE+mCwnGmSCJZBi5jYiDqZckxKBxnjixjrkEvRIPZnmdD4SDPNFr/X4Mp7T6ZrWDUUDjIUSgiXngAsJmzYNRQOEgnFJHJ/IAVjEJ7Iq6gcJBBNA4nugYbDLVRn0GziXlbdSwUDjIJabCcyuvcg6sV9kdnlspz8QqFgzhDdmhS7M8rOQeP5AFWLBZ/ul0TCgfxSuPgo/o1dzF5PnhqSTGLoVA4SHBOHJJ0hbjS4SvYs14K+brVOFAqVigcJCoahy3VX5uHLQFuPJZaFID9YVD1AVGth0ERC4WDzJ4jJ7s1Kc8p9hCK/wdkfm68zLWwhgAAAABJRU5ErkJggg==" alt="Marai logo" />
   <h1>Marai — Privacy Policy</h1>
   <p>மறை &nbsp;·&nbsp; My Secret &nbsp;·&nbsp; Local-First Zero-Knowledge Secrets Manager</p>
 </header>
 
 <div class="container">
 
-  <div class="badge">Last updated: June 28, 2026</div>
+  <div class="badge">Last updated: July 13, 2026</div>
 
   <div class="highlight-box">
     <p>Marai is built on a single principle: your secrets are yours alone. We cannot see, access, or recover any data you store in the app — ever.</p>
@@ -169,10 +177,12 @@
   <h2>4. Encryption</h2>
   <p>Marai uses industry-standard cryptography to protect your data:</p>
   <ul>
-    <li><strong>Key Derivation:</strong> Your Super Key is run through PBKDF2-SHA256 with 100,000 iterations and a random 32-byte salt to produce a 256-bit encryption key.</li>
+    <li><strong>Key Derivation:</strong> Your Super Key is run through PBKDF2-SHA256 with 600,000 iterations and a random 32-byte salt to produce a 256-bit encryption key. (Vaults created before July 2026 used 100,000 iterations and are upgraded automatically the next time you unlock with your Super Key.)</li>
     <li><strong>Encryption:</strong> AES-256-GCM with a unique random 12-byte nonce per field, providing both confidentiality and integrity (tamper detection).</li>
     <li><strong>Verification:</strong> A SHA-256 hash of the derived key is stored to verify your Super Key on unlock — the key itself is never stored in plaintext.</li>
     <li><strong>Your Super Key is never stored.</strong> If you lose it, your data cannot be recovered — by you or by us.</li>
+    <li><strong>Screenshot protection:</strong> The App blocks screenshots and screen recording of vault contents, and hides its contents in the app switcher.</li>
+    <li><strong>Clipboard protection:</strong> Anything you copy from the App (passwords, tokens, codes) is automatically cleared from the clipboard after 30 seconds.</li>
   </ul>
 
   <!-- 5 -->
@@ -191,25 +201,37 @@
   <p>If you enable biometric unlock (fingerprint or Face ID), the App uses your device's built-in biometric hardware. Marai never accesses raw biometric data — authentication is handled entirely by the operating system (Android Biometric API / iOS Local Authentication). The App only receives a pass/fail result.</p>
 
   <!-- 7 -->
-  <h2>7. Permissions</h2>
+  <h2>7. Autofill (Optional, Android)</h2>
+  <p>You can set Marai as your device's autofill service to fill saved logins into other apps and websites. When you do:</p>
+  <ul>
+    <li>Filling always requires <strong>biometric authentication</strong> first — the system prompt appears over the app you're filling; your vault is never opened silently</li>
+    <li>Only the <strong>single username and password you explicitly pick</strong> are handed to the requesting app via the Android Autofill Framework — nothing else in your vault is exposed</li>
+    <li>Marai receives only the requesting app's package name or website domain, used locally to suggest matching entries; this is never transmitted anywhere</li>
+    <li>The feature is off until you enable it in your device settings, and Marai never offers to fill its own screens</li>
+  </ul>
+
+  <!-- 8 -->
+  <h2>8. Permissions</h2>
   <table>
     <thead>
       <tr><th>Permission</th><th>Purpose</th></tr>
     </thead>
     <tbody>
       <tr><td>INTERNET</td><td>Required for optional Google Drive backup and Google Sign-In</td></tr>
-      <tr><td>USE_BIOMETRIC / USE_FINGERPRINT</td><td>Optional biometric unlock</td></tr>
+      <tr><td>USE_BIOMETRIC / USE_FINGERPRINT</td><td>Optional biometric unlock and autofill authentication</td></tr>
+      <tr><td>CAMERA</td><td>Optional QR-code scanning (2FA/TOTP setup) and entry icon photos</td></tr>
       <tr><td>READ_MEDIA_IMAGES</td><td>Optional image attachment to entries</td></tr>
+      <tr><td>BIND_AUTOFILL_SERVICE</td><td>Optional autofill of logins into other apps (system-managed)</td></tr>
       <tr><td>Face ID (iOS)</td><td>Optional biometric unlock on iPhone</td></tr>
     </tbody>
   </table>
 
-  <!-- 8 -->
-  <h2>8. Third-Party Services</h2>
+  <!-- 9 -->
+  <h2>9. Third-Party Services</h2>
   <p>Marai does not integrate any analytics, advertising, crash reporting, or tracking SDKs. The only optional third-party service is Google Drive for backup, which is governed by Google's Privacy Policy.</p>
 
-  <!-- 9 -->
-  <h2>9. Data Retention & Deletion</h2>
+  <!-- 10 -->
+  <h2>10. Data Retention & Deletion</h2>
   <p>All your data resides on your device. You can delete it at any time by:</p>
   <ul>
     <li>Deleting individual entries or folders within the App</li>
@@ -218,16 +240,16 @@
   </ul>
   <p>We have no copies of your data and cannot delete it on your behalf.</p>
 
-  <!-- 10 -->
-  <h2>10. Children's Privacy</h2>
+  <!-- 11 -->
+  <h2>11. Children's Privacy</h2>
   <p>Marai is not directed at children under the age of 13. We do not knowingly collect personal information from children. Since we collect no data from any user, this applies equally to all age groups.</p>
 
-  <!-- 11 -->
-  <h2>11. Changes to This Policy</h2>
+  <!-- 12 -->
+  <h2>12. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Last updated" date at the top of this page. We encourage you to review this policy periodically.</p>
 
-  <!-- 12 -->
-  <h2>12. Contact</h2>
+  <!-- 13 -->
+  <h2>13. Contact</h2>
   <p>If you have any questions about this Privacy Policy, please contact us at:</p>
   <p><a href="mailto:developer.greywolf@gmail.com">developer.greywolf@gmail.com</a></p>
 
