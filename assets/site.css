@@ -225,3 +225,36 @@ a:hover {
   border: 0;
   border-top: 1px solid var(--rule);
 }
+
+.doc table {
+  width: 100%;
+  margin: 1.25rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.doc th,
+.doc td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem 0.75rem 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.doc th {
+  font-family: 'Anek Tamil', system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.doc code {
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  border-radius: 0.3em;
+  background: var(--card);
+}
+
+/* A policy's opening promise, before the numbered sections. */
+.doc > p:first-of-type + p {
+  font-size: 1.15rem;
+}
