@@ -1,4 +1,10 @@
-# Selvam — Privacy policy
+---
+layout: doc
+title: "Selvam — Privacy policy"
+heading: "Selvam — Privacy policy"
+description: "What Selvam keeps, where it keeps it, and what never leaves your phone."
+icon: /selvam/icon.png
+---
 
 _Last updated 22 September 2026_
 

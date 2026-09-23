@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@500;600;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+<link rel="icon" href="{{ page.icon | relative_url }}">
+</head>
+<body style="{{ page.tile_style }}">
+<main class="page">
+  <a class="back" href="{{ '/' | relative_url }}">Back to all apps</a>
+  <div class="doc-head">
+    <img src="{{ page.icon | relative_url }}" alt="">
+    <h1>{{ page.heading }}</h1>
+  </div>
+  <div class="doc">
+    {{ content }}
+  </div>
+</main>
+</body>
+</html>
