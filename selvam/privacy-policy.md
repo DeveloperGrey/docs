@@ -2,8 +2,7 @@
 
 _Last updated 22 September 2026_
 
-The same text is in the app, under Settings → Privacy policy
-(`lib/features/settings/presentation/privacy_page.dart`). Change both together.
+The same text is in the app, under Settings → Privacy policy.
 
 ## In short
 
