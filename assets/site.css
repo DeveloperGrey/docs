@@ -196,7 +196,11 @@ a:hover {
   line-height: 1.2;
 }
 
-.doc {
+/* Prose keeps its reading measure; a table may use the whole page, since a
+   cramped table is harder to read than a wide one. */
+.doc p,
+.doc li,
+.doc h2 {
   max-width: var(--measure);
 }
 
@@ -227,6 +231,8 @@ a:hover {
 }
 
 .doc table {
+  display: block;
+  overflow-x: auto;
   width: 100%;
   margin: 1.25rem 0;
   border-collapse: collapse;
