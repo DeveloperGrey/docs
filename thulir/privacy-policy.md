@@ -1,6 +1,14 @@
-# Thulir — Privacy policy
+---
+layout: doc
+title: "Thulir — Privacy policy"
+heading: "Thulir — Privacy policy"
+description: "What Thulir keeps, where it keeps it, and why it cannot send anything anywhere."
+icon: /thulir/icon.png
+---
 
 _Last updated 26 September 2026_
+
+The same text is in the app, under Settings → Privacy policy.
 
 ## In short
 
